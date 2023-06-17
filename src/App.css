@@ -1,3 +1,26 @@
+.column {
+  display: inline-block;
+  width: 31%;
+  padding: 1%;
+}
+
+.column button {
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+.column img {
+  width: 100%;
+}
+
+.footer p {
+  width: 100%;
+  background-color: goldenrod;
+  color: white;
+  padding: 5px;
+}
+
 .App {
   text-align: center;
 }
@@ -5,6 +28,39 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.navigation {
+  background-color: black;
+  padding: 10px;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navigation li {
+  float: left;
+}
+
+.active {
+  background-color: goldenrod;
+}
+
+.navigation a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -28,6 +84,16 @@
   color: #61dafb;
 }
 
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -39,10 +105,12 @@
   visibility: hidden;
   opacity: 0;
 }
+
 .overlay:target {
   visibility: visible;
   opacity: 1;
 }
+
 .popup {
   margin: 70px auto;
   padding: 5px;
@@ -52,12 +120,17 @@
   position: relative;
   transition: all 5s ease-in-out;
 }
-.popup img{ width: 100%;}
+
+.popup img {
+  width: 100%;
+}
+
 .popup h2 {
   margin-top: 0;
   color: #333;
   font-family: Tahoma, Arial, sans-serif;
 }
+
 .popup .close {
   position: absolute;
   top: 20px;
@@ -68,18 +141,12 @@
   text-decoration: none;
   color: #333;
 }
-.popup .close:hover {color: #06D85F;}
+
+.popup .close:hover {
+  color: #06D85F;
+}
+
 .popup .content {
   max-height: 30%;
   overflow: auto;
-}
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
